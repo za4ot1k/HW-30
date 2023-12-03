@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 100vh;
+    background-color: rgb(202, 179, 223);
+    padding: 50px 0px 0px 50px;
+    animation-timing-function: linear;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+
+    animation-name: runCircle;
+    animation-duration: 4s;
+}
+
+@keyframes runCircle {
+    
+   0% {
+        transform: translate(0);
+   }
+
+   25% {
+        transform: translateY(200px);
+        background-color: darkorchid;
+        border-radius: 25% ;
+   }
+
+   50% {
+        transform: translateX(200px) translateY(200px);
+        background-color: midnightblue;
+        border-radius: 50%;
+   }
+
+   75% {
+        transform: translateY(0px) translateX(200px) ;
+        background-color: palevioletred;
+        border-radius: 25% ;
+   }
+
+
+   100% {
+        transform: translate(0);
+   }
+
+}
